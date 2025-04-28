@@ -47,7 +47,7 @@ const Home = () => {
       <div className="flex flex-1 flex-col">
         <button
           onClick={toggleSidebar}
-          className="md:hidden p-4 bg-gray-800 text-2xl"
+          className="md:hidden p-4 bg-gray-600 text-2xl"
         >
           <GiHamburgerMenu />
         </button>
@@ -65,14 +65,14 @@ const Home = () => {
               {messages && messages.length > 0 ? (
                 messages.map((e, i) => (
                   <div key={i}>
-                    <div className="mb-4 p-4 rounded bg-blue-700 text-white flex gap-1">
+                    <div className="mb-4 p-4 rounded bg-blue-600 text-white flex gap-1">
                       <div className="bg-white p-2 rounded-full text-black text-2xl h-10">
                         <CgProfile />
                       </div>
                       {e.question}
                     </div>
 
-                    <div className="mb-4 p-4 rounded bg-gray-700 text-white flex gap-1">
+                    <div className="mb-4 p-4 rounded bg-gray-800 text-white flex gap-1">
                       <div className="bg-white p-2 rounded-full text-black text-2xl h-10">
                         <FaRobot />
                       </div>
@@ -81,7 +81,7 @@ const Home = () => {
                   </div>
                 ))
               ) : (
-                <p>No chat yet</p>
+                <p className="text-white mb-4">No chat yet</p>
               )}
 
               {newRequestLoading && <LoadingSmall />}

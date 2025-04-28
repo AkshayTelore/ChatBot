@@ -21,7 +21,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
   };
   return (
     <div
-      className={`fixed inset-0 bg-gray-800 p-4 transition-transform transform md:relative md:translate-x-0 md:w-1/4 md:block ${
+      className={`fixed inset-0 bg-gray-400 p-4 transition-transform transform md:relative md:translate-x-0 md:w-1/4 md:block ${
         isOpen ? "translate-x-0" : "-translate-x-full"
       }`}
     >

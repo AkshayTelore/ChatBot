@@ -5,9 +5,9 @@ const Header = () => {
   const { chats } = ChatData();
   return (
     <div>
-      <p className="text-lg mb-6">Hello, How can i help you today?</p>
+      <p className="text-white mb-4">Hello, How can i help you today?</p>
       {chats && chats.length === 0 && (
-        <p className="text-lg mb-6">Create new chat to continue</p>
+        <p className="text-white mb-4">Create new chat to continue</p>
       )}
     </div>
   );
